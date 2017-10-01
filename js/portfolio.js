@@ -244,7 +244,7 @@ function openPortfolio(e) {
   var address = './portfolio/' + e;
   var address2 = './portfolio/' + e + '/index.html';
   $.ajax({
-    type: 'POST',
+    type: 'GET',
     url: address2,
     dataType: 'html',
     // beforesend: function() {
