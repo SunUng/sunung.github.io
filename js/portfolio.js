@@ -134,7 +134,7 @@ $( function() {
 
     // set filter in hash
     // console.log(nowHash);
-    console.log(hashFilter);
+    // console.log(hashFilter);
     var filterName = $('.portfolio_category').find('li[data-filter="'+ hashFilter +'"]').text().trim();
     $('.category_display').text(filterName);
     if ( !hashFilter && isIsotopeInit ) {
@@ -242,9 +242,10 @@ function ajaxCallPP() {
 
 function openPortfolio(e) {
   var address = './portfolio/' + e;
+  var address2 = './portfolio/' + e + '/index.html';
   $.ajax({
     type: 'POST',
-    url: address,
+    url: address2,
     dataType: 'html',
     // beforesend: function() {
     //
