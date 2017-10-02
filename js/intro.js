@@ -50,16 +50,19 @@ $(function(){
        autoplayHoverPause:true,
        nav:true,
        navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-      //  responsiveClass:true,
-      //  responsive : {
-      //      0 : {
-      //         items:1
-      //      },
-      //      480 : {
-      //         items:2
-      //      }
-       //
-      //  }
+       responsiveClass:true,
+       responsive : {
+           0 : {
+              items:1
+           },
+           480 : {
+              items:2
+           },
+           768 : {
+              items:3
+           }
+
+       }
    });
    owl.on('changed.owl.carousel', function(e) {
       var index = e.page.index;

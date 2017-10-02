@@ -469,6 +469,21 @@ body {
       padding-left:0;
       text-align:left;
     }
+    section.skills {
+      padding-bottom:80px;
+    }
+    section.skills .wrap_skills {
+      padding-bottom:inherit;
+      & .content_box.half {
+        float:none;
+      }
+    }
+    section.contents .article {
+      margin-bottom:50px;
+    }
+    .wrap_slide {
+      position:relative;
+    }
 }
 @include mq($until: mobile) {
   .inner {
