@@ -94,7 +94,7 @@ $('.video_background').YTPlayer({
 (function ( $ ) {
     // $.removeCookie('visited', { path: '/' });
     $.ajax({
-        type:"POST",
+        type:"get",
         url: "./main.html",
         dataType: "html",
         success: function(data) {
@@ -185,7 +185,7 @@ $(function(){
 	});
 	function load_page_content(page) {
 		$.ajax({
-			type: 'post',
+			type: 'get',
 			url: page + '.html',
 			data: {},
 			success: function(response) {
