@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@include mq($from: desktop, $until: wide) {
+}
+@include mq($until: wide) {
+    .xxx {background: red}
+    .xxx::before {content:"wide"; position:relative; bottom:100px; background:#fff; display:inline-block;}
+}
+@include mq($until: desktop) {
+    .xxx {background: blue}
+    .xxx::before {content:"desktop"; position:relative; bottom:100px; background:#fff; display:inline-block;}
+}
+@include mq($until: tablet) {
+    .xxx {background: green}
+    .xxx::before {content:"tablet"; position:relative; bottom:100px; background:#fff; display:inline-block;}
+}
+@include mq($until: mobile) {
+    .xxx {background: yellow}
+    .xxx::before {content:"mobile"; position:relative; bottom:100px; background:#fff; display:inline-block;}
+}
+// develope tool : e
