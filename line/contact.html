@@ -1,0 +1,103 @@
+<section class="subpage contact">
+  <div class="image_background"></div>
+  <div class="page_title unselectable">
+    <i class="fa fa-film" aria-hidden="true"></i>
+    고객문의
+  </div>
+  <div class="container">
+    <h1 class="logo">
+      <a href="./">
+        <img src="./images/logo_white.svg" alt="">
+      </a>
+    </h1>
+    <article class="contents_none">
+      <div class="page_wrapper">
+        <div class="page_inner">
+
+          <div class="contact_map">
+            <div class="contact_item">
+              <div class="contact_item_inner">
+                <div id="map" class="left_item1"></div>
+                <script>
+                  var map;
+
+                  function initMap() {
+                    var myLatLng = {lat: 37.882000, lng: 127.723767};
+                    map = new google.maps.Map(document.getElementById('map'), {
+                      center: myLatLng,
+                      zoom: 14,
+                      disableDefaultUI: true,
+                      draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true
+                    });
+                    var marker = new google.maps.Marker({
+                       position: myLatLng,
+                       icon:'./images/marker.png',
+                       map: map,
+                       title: '라인정보통신'
+                     });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6VKVKrGJJjJqA65wBeO2UIGUA24j8FRM&callback=initMap" async defer></script>
+                <div class="map_address left_item2">
+                  <a href="https://www.google.co.kr/maps/place/%EA%B0%95%EC%9B%90%EB%8F%84+%EC%B6%98%EC%B2%9C%EC%8B%9C+%EA%B8%88%EA%B0%95%EB%A1%9C+14/@37.879865,127.7154881,14.93z/data=!4m5!3m4!1s0x3562e5d89fe7df8b:0x20e3a805c07a5736!8m2!3d37.8819517!4d127.7238093" target="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="address_text">
+                      <div class="address_ko">강원도 춘천시 금강로 14, 2층 라인정보통신</div>
+                      <div class="address_en">2F, 14, Geumgang-ro, Chuncheon-si, Gangwon-do</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact_item bar">
+
+              <div class="contact_item_inner">
+                <ul class="contact_list">
+                  <li class="right_item1">
+                    <h3>
+                      <i class="fa fa-phone" aria-hidden="true"></i>대표전화
+                    </h3>
+                    <div class="contact_content nokor">
+                      <a href="tel:+822441414">
+                        033-244-1414
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="right_item2">
+                    <h3>
+                      <i class="fa fa-fax" aria-hidden="true"></i>팩스
+                    </h3>
+                    <div class="contact_content nokor">
+                      033-241-1414
+                    </div>
+                  </li>
+
+                  <li class="right_item3">
+                    <h3>
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>이메일
+                    </h3>
+                    <div class="contact_content nokor">
+                      <a href="mailto:HouseDAM@naver.com">HouseDAM@naver.com</a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <div class="contact_desc right_item4">
+                  <div class="contact_desc_strong">
+                    상담 시간 안내 : 평일 09:00~18:00
+                  </div>
+                  문의하실 내용이 있으신가요? 위의 연락처로 연락을 주시면 친절히 답변해 드리겠습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact_info">
+
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
