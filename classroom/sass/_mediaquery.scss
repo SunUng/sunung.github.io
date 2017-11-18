@@ -13,6 +13,86 @@
 @include mq($until: tablet) {
     .xxx {background: green}
     .xxx::before {content:"tablet"; position:relative; bottom:100px; background:#fff; display:inline-block;}
+
+    .header h1 {
+      font-size: 21px;
+    }
+    main {
+      padding:0;
+    }
+    .slogan {
+        position:static;
+    }
+    .slogan .contents {
+        width:100%;
+        margin-top:0;
+        padding: 0 4%;
+        margin-bottom: 30px;
+    }
+    .slogan .contents .title {
+        font-size:20px;
+    }
+    .slogan .contents .words {
+        text-align:center;
+        padding:10px 20px;
+        font-size:0;
+    }
+    .slogan .contents .words span {
+        width:auto;
+        float:none;
+        font-size:20px;
+    }
+    .slogan .contents .words span.br {
+        margin:0;
+        margin-right:3%;
+    }
+    .slogan .contents .words span.mark {
+        text-indent: inherit;
+    }
+    .slogan .contents .words::before, .slogan .contents .words::after {
+        top:0;
+        width: 10px;
+        height: 100%;
+        -webkit-transform: scale(1,1.15);
+        transform: scale(1,1.15);
+    }
+    .slogan .contents .words::before {
+        left: 10%;
+        right:auto
+    }
+    .slogan .contents .words::after {
+        right: 10%;
+        left:auto
+    }
+    .front {
+        width:50%;
+        float:left;
+        padding:1%;
+    }
+    .front .seat {
+        width:100%;
+        float:left;
+    }
+    .chief {
+        position:static;
+        width:50%;
+        float:left;
+        left:auto;
+        top:auto;
+        padding:1%;
+    }
+    .front .seat .table:first-child {
+        color: #4e87e3;
+        font-weight: bold;
+        font-size: inherit;
+    }
+    .div {
+        padding:1%;
+        font-size:10px;
+    }
+    .name {
+        font-size:10px;
+    }
 }
 @include mq($until: mobile) {
     .xxx {background: yellow}
