@@ -3196,4 +3196,11 @@ main {
 .desc {
 
 }
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
 @import 'mediaquery';
