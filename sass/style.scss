@@ -34,7 +34,7 @@
   font-style: normal;
 }
 
-.icon-logo, .icon-logo_v, .icon-logo_h {
+.icon-logo, .icon-logo_v, .icon-logo_h, .icon-moksunung_h, .icon-moksunung_h {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'iconsketch' !important;
   speak: none;
@@ -62,6 +62,16 @@
 .icon-logo_v {
   &:before {
     content: '\e902';
+  }
+}
+.icon-moksunung_h {
+  &:before {
+    content: '\e903';
+  }
+}
+.icon-moksunung_v {
+  &:before {
+    content: '\e904';
   }
 }
 
