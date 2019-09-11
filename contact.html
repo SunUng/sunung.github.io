@@ -161,7 +161,7 @@
                 <footer class="footer">
                     <div class="inner">
                         <img src="./images/signature.png" alt="" class="signature">
-                        Copyright 2017. <a href="http://iconsketch.com" target="_blank" class="blog">Sun-ung Mok</a> all rights reserved.
+                        Copyright 2017<span class="current_year"></span>. <a href="https://iconsketch.com" target="_blank" class="blog">Sun-ung Mok</a> all rights reserved.
                         <a href="./credit.html" class="btn_credit">
                             CREDIT<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </a>
@@ -177,6 +177,11 @@
         <script src="./js/easing-min.js"></script>
         <script src="./js/main-min.js"></script>
         <script src="./js/contact-min.js"></script>
+        <script>
+            var currentYear = new Date().getFullYear();
+            var str = '-' + currentYear;
+            $('.current_year').text(str);
+        </script>
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107193395-1"></script>
         <script>
