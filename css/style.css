@@ -1,0 +1,58 @@
+
+/* 
+
+
+
+.intro.portfolio {
+  height: 300px
+}
+
+.intro.portfolio .header {
+  color: #000
+}
+
+.intro.portfolio .header .header_original {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.intro.portfolio .path {
+  color: #7f7f7f
+}
+
+.intro.portfolio .gnb_list li.on a {
+  background: #7f7f7f;
+  color: #fff
+}
+
+.intro.portfolio .gnb_list li a:hover {
+  border-color: #7f7f7f
+}
+
+.intro.portfolio .gnb_list li+li::before {
+  color: #7f7f7f
+}
+
+.intro.portfolio .slogan_contents p {
+  text-shadow: none
+}
+
+.intro.portfolio.loaded .intro_cover {
+  background: #f5f5f5
+}
+
+.intro.portfolio .wrap_slogan {
+  padding-top: 80px
+}
+
+.intro.loaded .intro_cover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: none;
+  transform: none
+}
+
+
+
+
+
+ */
